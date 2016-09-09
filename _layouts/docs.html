@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<pre>{{ site | inspect }}</pre>
+
+<nav>
+    {% for section in site.data.docs %}
+    <p>{{ section.title }}</p>
+    <ul>
+    {% for item in section.docs %}
+      {% assign item_url = item | prepend:"/docs/" | append:"/" %}
+      {% assign p = site.docs | where:"url", item_url | first %}
+      <li class="{% if item_url == page.url %}current{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a> {{ item_url }}</li>
+    {% endfor %}
+    </ul>
+    {% endfor %}
+
+</nav>
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

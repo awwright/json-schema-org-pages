@@ -1,0 +1,22 @@
+- title: Getting Started
+  docs:
+  - home
+  - quickstart
+  - installation
+  - usage
+  - structure
+  - configuration
+
+- title: Validation
+  docs:
+  - type
+  - allOf
+  - anyOf
+  - oneOf
+  - not
+
+- title: Hypermedia
+  docs:
+  - github-pages
+  - deployment-methods
+  - continuous-integration
