@@ -1,17 +1,16 @@
 - title: Getting Started
   docs:
-  - /intro/basics
-  - /intro/type
-  - /intro/uri
-  - /intro/definitions
-  - /intro/recursion
-  - /intro/practices
-
-- title: Hypermedia
-  docs:
-  - /hypermedia/http
-  - /hypermedia/linking
-  - /hypermedia/annotating
+  - /guide/basics
+  - /guide/model
+  - /guide/validation
+  - /guide/uri
+  - /guide/definitions
+  - /guide/recursion
+  - /guide/practices
+  - /guide/http
+  - /guide/embeded
+  - /guide/linking
+  - /guide/annotating
 
 - title: Core Properties
   docs:
