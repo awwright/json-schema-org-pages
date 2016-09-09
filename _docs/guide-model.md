@@ -14,6 +14,8 @@ JSON Schema operates on a basic data model derived from the JSON grammar. JSON S
 * boolean - one of the two special values `true` or `false`
 * null - the special value `null`
 
+JSON Schema defines two instances as equal if and only if they are of the same type and carry the same mathematical value (codepoint-for-codepoint, property-for-property, or item-for-item, in the case of strings, objects, and arrays, respectively). Two instances that are JSON-Schema-equal will always validate the same, regardless of whitespace, escapes, or formatting.
+
 JSON Schema does not provide any way to specify how the data is formatted; for instance, verifying presence or absence of whitespace, `\uXXXX` escaped vs. UTF-8 encoded forms in strings, order of properties in an object, or duplicate properties in an object. These are considered parser-level duties, and are defined in JSON itself.
 
 Although validators are defined in terms of this data model, JSON Schema only defines how to validate an `application/json` document, serialized as a series of bytes. JSON Schema does not provide any way to describe in-memory objects like pointers, `NaN`, `undefined`, imaginary numbers, native Date objects, unserialized structs, etc.
