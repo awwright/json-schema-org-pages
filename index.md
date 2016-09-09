@@ -6,13 +6,14 @@ permalink: /
 
 JSON Schema is a vocabulary that allows you to annotate and validate JSON documents.
 
-The default JSON Schema is a blank object, which validates nothing and describes nothing:
+The JSON document being validated or described we call the _instance_, and the document containing the description is called the _schema_.
+
+The most basic schema is a blank JSON object, which constrains nothing, allows anything, and describes nothing:
 
     {}
 
-This empty, default JSON Schema validates successfully against anything. The JSON document being validated or described we call the _instance_, and the document containing the description is called the _schema_.
 
-You can describe constraints on an instance by adding validation keywords to the schema. The most common one restricts which type the instance must be:
+You can apply constraints on an instance by adding validation keywords to the schema. For instance, the "type" keyword can be used to restrict an instance to an object, array, string, number, boolean, or null:
 
     { "type": "string" }
 
