@@ -196,6 +196,22 @@
 
 
 /**
+ * Documentation page
+ * These have a main content area and a navigation side-menu
+ */
+.doc-nav {
+    float: left;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.doc {
+    margin-left: 220px;
+}
+
+
+
+/**
  * Posts
  */
 .post-header {

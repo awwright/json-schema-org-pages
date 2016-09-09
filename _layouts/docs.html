@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<nav>
+<nav class="doc-nav">
     {% for section in site.data.docs %}
     <p>{{ section.title }}</p>
     <ul>
@@ -20,9 +20,9 @@ layout: default
 
 </nav>
 
-<article class="post">
+<article class="doc">
 
-  <header class="post-header">
+  <header class="doc-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
