@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: JSON Schema Data Model
+title: Data Model
 permalink: /guide/model
 ---
 
@@ -20,11 +20,11 @@ JSON Schema does not provide any way to specify how the data is formatted; for i
 
 Although validators are defined in terms of this data model, JSON Schema only defines how to validate an `application/json` document, serialized as a series of bytes. JSON Schema does not provide any way to describe in-memory objects like pointers, `NaN`, `undefined`, imaginary numbers, native Date objects, unserialized structs, etc.
 
-However, JSON Schema can help _annotate_ a serialized JSON form so that it is correctly _parsed_ into a native representation. For example, JSON Schema can annotate a string as an RFC 3339 date, and you can use a JSON parser that looks for these annotations and automatically converts it to your language's native `Date` object, if any.
+However, JSON Schema can help _annotate_ a serialized object that it is correctly _parsed_ back into a native representation. For example, JSON Schema can annotate a string as an RFC 3339 date, and you can use a JSON parser that looks for these annotations and automatically converts it to your language's native `Date` object, if any.
 
 Likewise, you could also use JSON Schema to annotate a property as serialized version of an object representing a geographical coordinate, and automatically convert this JSON object to an instance of a `GeoCoord` in your native application.
 
-Despite all these warnings, you _can_ still use JSON Schema to validate in-memory objects:
+Despite these restrictions, you _can_ still use JSON Schema to validate in-memory objects:
 
-* The in-memory objects _must_ be serializable to JSON (circular references must be reduced or removed), and
+* The in-memory objects _must_ be serializable to JSON (circular references removed or reduced to a string reference), and
 * The validator _must_ return the same result as if they were first serialized to JSON before validation.
