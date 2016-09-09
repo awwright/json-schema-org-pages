@@ -9,14 +9,50 @@
 
 - title: Hypermedia
   docs:
+  - /hypermedia/http
   - /hypermedia/linking
   - /hypermedia/annotating
 
-- title: Property Reference
+- title: Core Properties
   docs:
+  - /keyword/id
+  - /keyword/$schema
+
+- title: Validation Properties
+  docs:
+  - /keyword/multipleOf
+  - /keyword/maximum
+  - /keyword/minimum
+  - /keyword/maxLength
+  - /keyword/minLength
+  - /keyword/pattern
+  - /keyword/additionalItems
+  - /keyword/items
+  - /keyword/maxItems
+  - /keyword/minItems
+  - /keyword/uniqueItems
+  - /keyword/maxProperties
+  - /keyword/minProperties
+  - /keyword/required
+  - /keyword/additionalProperties
+  - /keyword/properties
+  - /keyword/patternProperties
+  - /keyword/dependencies
+  - /keyword/enum
   - /keyword/type
   - /keyword/allOf
   - /keyword/anyOf
   - /keyword/oneOf
   - /keyword/not
 
+- title: Annotation Properties
+  docs:
+  - /keyword/id
+  - /keyword/title
+  - /keyword/description
+  - /keyword/default
+  - /keyword/definitions
+
+- title: Hypermedia Properties
+  docs:
+  - /keyword/link

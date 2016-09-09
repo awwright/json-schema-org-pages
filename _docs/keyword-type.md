@@ -1,25 +1,33 @@
 ---
 layout: docs
-title: Validation Property "type"
+title: type
 permalink: /keyword/type
 ---
 
-
-### Valid values
-
-The value of this keyword MUST be either a string or an array. If it is an array, elements of the array MUST be strings and MUST be unique.
-
-String values MUST be one of the seven primitive types defined by the core specification.
+## Function
 
 
-### Conditions for successful validation
-
-An instance matches successfully if its primitive type is one of the types defined by keyword. Recall: "number" includes "integer".
+## Valid Values
 
 
+## Examples
 
-### Examples
 
-    { "type": "object" }
+## Meta-schema
 
+	{
+		"anyOf": [
+			{
+				"$ref": "#/definitions/simpleTypes"
+			},
+			{
+				"type": "array",
+				"items": {
+					"$ref": "#/definitions/simpleTypes"
+				},
+				"minItems": 1,
+				"uniqueItems": true
+			}
+		]
+	}
 
