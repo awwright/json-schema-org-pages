@@ -1,22 +1,22 @@
 - title: Getting Started
   docs:
-  - home
-  - quickstart
-  - installation
-  - usage
-  - structure
-  - configuration
+  - /intro/home
+  - /intro/quickstart
+  - /intro/installation
+  - /intro/usage
+  - /intro/structure
+  - /intro/configuration
 
 - title: Validation
   docs:
-  - type
-  - allOf
-  - anyOf
-  - oneOf
-  - not
+  - /keyword/type
+  - /keyword/allOf
+  - /keyword/anyOf
+  - /keyword/oneOf
+  - /keyword/not
 
 - title: Hypermedia
   docs:
-  - github-pages
-  - deployment-methods
-  - continuous-integration
+  - /hypermedia/github-pages
+  - /hypermedia/deployment-methods
+  - /hypermedia/continuous-integration

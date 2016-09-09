@@ -2,16 +2,18 @@
 layout: default
 ---
 
-<pre>{{ site | inspect }}</pre>
-
 <nav>
     {% for section in site.data.docs %}
     <p>{{ section.title }}</p>
     <ul>
     {% for item in section.docs %}
-      {% assign item_url = item | prepend:"/docs/" | append:"/" %}
+      {% assign item_url = item | prepend:"" | append:"" %}
       {% assign p = site.docs | where:"url", item_url | first %}
-      <li class="{% if item_url == page.url %}current{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a> {{ item_url }}</li>
+      {% if p %}
+      <li class="{% if item_url == page.url %}current{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
+      {% else %}
+      <li>{{ item_url }}</li>
+      {% endif %}
     {% endfor %}
     </ul>
     {% endfor %}
