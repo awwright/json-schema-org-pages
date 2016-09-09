@@ -6,7 +6,8 @@ permalink: /spec
 
 <h2>Internet-Drafts</h2>
 <div class="block">
-    <p>The latest draft is v4.  The specification is split into three parts:</p>
+    <p>The specification is the authortative document on JSON Schema, targeted at authors of validators.
+    The latest draft is v4. The specification is split into three parts:</p>
 
     <table class="key-value">
         <tr>

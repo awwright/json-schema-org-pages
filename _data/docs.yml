@@ -1,13 +1,18 @@
 - title: Getting Started
   docs:
-  - /intro/home
-  - /intro/quickstart
-  - /intro/installation
-  - /intro/usage
-  - /intro/structure
-  - /intro/configuration
+  - /intro/basics
+  - /intro/type
+  - /intro/uri
+  - /intro/definitions
+  - /intro/recursion
+  - /intro/practices
 
-- title: Validation
+- title: Hypermedia
+  docs:
+  - /hypermedia/linking
+  - /hypermedia/annotating
+
+- title: Property Reference
   docs:
   - /keyword/type
   - /keyword/allOf
@@ -15,8 +20,3 @@
   - /keyword/oneOf
   - /keyword/not
 
-- title: Hypermedia
-  docs:
-  - /hypermedia/github-pages
-  - /hypermedia/deployment-methods
-  - /hypermedia/continuous-integration
