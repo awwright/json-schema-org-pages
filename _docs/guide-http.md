@@ -26,4 +26,4 @@ The link relation used is "describedby", a generic link relation first described
 
 If the user-agent doesn't know how to handle the received JSON profile, it can download a JSON Schema describing the profile from the provided "describedBy" link.
 
-User agents that download a schema must do so from the Link header, and must cache the schema and follow the provided caching headers.
+The Link header does not have to match the profile; as the profile might not be a URL that points to a network location. User agents that download a schema must do so from the Link header, and must cache the schema and follow the provided caching headers.
