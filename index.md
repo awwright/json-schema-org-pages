@@ -20,19 +20,9 @@ You can apply constraints on an instance by adding validation keywords to the sc
     { "type": "string" }
 
 
-JSON Schema nests schemas to describe things like the values of items in an array, or the values of properties in an object. Multiple constraints can be combined, and you can also add annotations to your JSON instance:
+JSON Schema is hypermedia ready, and ideal for annotating your existing JSON-based HTTP API. JSON Schema documents are identified by URIs, which can be used in HTTP Link headers, and inside JSON Schema documents to allow recursive definitions.
 
-    { "description": "A geographical coordinate"
-    , "type": "object"
-    , "properties":
-        { "latitude": { "type": "number" }
-        , "longitude": { "type": "number" }
-        }
-    }
-
-JSON Schema is a hypermedia format ideally suited for using in HTTP. JSON Schema documents are identified by URIs, which can be used in HTTP Link headers, and inside JSON Schema documents to allow recursive definitions.
-
-<a href="doc">Continue reading the Reference guide.</a>
+<a href="doc/basics">Continue reading the Reference guide.</a>
 
 ## The Specification
 
