@@ -1,0 +1,43 @@
+
+The JSON Schema website.
+
+Jekyll-special files:
+
+Gemfile
+Gemfile.lock
+_config.yml
+_data
+_docs
+_includes
+_layouts
+_posts
+_sass
+_site
+css
+img
+index.md
+json-schema-spec
+software.md
+spec.md
+
+
+Static files for client programs to use, and who uses it:
+
+address
+calendar
+card
+draft-00
+draft-01
+draft-02
+draft-03
+draft-04
+geo
+hyper-schema
+interfaces
+latest
+links
+next
+schema
+schema.type
+shared.html
+
