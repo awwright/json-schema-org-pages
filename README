@@ -1,6 +1,11 @@
 
 The JSON Schema website.
 
+TODO:
+
+1. Hide docs side-menu on small screens
+2. Make sure already-accesible schemas and the like are accessible on the website
+
 Jekyll-special files:
 
 Gemfile
@@ -39,5 +44,4 @@ links
 next
 schema
 schema.type
-shared.html
 

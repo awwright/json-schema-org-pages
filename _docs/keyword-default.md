@@ -6,6 +6,8 @@ permalink: /keyword/default
 
 ## Function
 
+This indicates the default for the instance property.
+
 
 ## Valid Values
 

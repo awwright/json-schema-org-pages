@@ -6,6 +6,8 @@ permalink: /keyword/pattern
 
 ## Function
 
+When the instance value is a string, this provides a regular expression that a instance string value should match in order to be valid.
+
 
 ## Valid Values
 
