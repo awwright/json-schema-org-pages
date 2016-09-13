@@ -15,12 +15,14 @@ To distinguish different "flavors" or profiles of JSON documents from each other
 
 The "profile" media-type parameter is never supposed to be dereferenced or used to download a schema, it is strictly an identifier provided for the benefit of clients that have pre-programmed knowledge of what that profile means.
 
+Guidelines for what a "profile" is can be found from [RFC 6906](https://tools.ietf.org/html/rfc6906).
+
 
 ## Link header
 
 If a client has requested a JSON document from an HTTP server, you can use the `Link` header to define where a schema may be downloaded from, if the client doesn't already know anything about the JSON document or its profile type.
 
-The link relation used is "describedby", a generic link relation first described in [POWDER](https://www.w3.org/TR/powder-dr/#semlink).
+The link relation used is "describedby", a generic link relation first described in [POWDER](https://www.w3.org/TR/powder-dr/#semlink) and updated in [LDP](https://www.w3.org/TR/ldp/#link-relation-describedby).
 
     Link: <http://example.com/my-hyper-schema#>; rel="describedBy"
 
