@@ -1,6 +1,8 @@
 
 The JSON Schema website.
 
+_docs contains information on the keywords, plus examples on their use. It is aimed at schema authors.
+
 TODO:
 
 1. Hide docs side-menu on small screens

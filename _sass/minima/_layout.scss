@@ -204,6 +204,18 @@
     max-width: 200px;
     margin-right: 20px;
 }
+.doc-nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.doc-nav > ul > li {
+    margin-bottom: 1em;
+}
+
+.doc-nav > ul > li a {
+    display: block;
+}
 
 .doc {
     margin-left: 220px;

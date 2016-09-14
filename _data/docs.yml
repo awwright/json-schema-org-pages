@@ -3,13 +3,9 @@
   - /guide/basics
   - /guide/model
   - /guide/validation
-  - /guide/uri
   - /guide/definitions
   - /guide/recursion
-  - /guide/practices
   - /guide/http
-  - /guide/embeded
-  - /guide/linking
   - /guide/annotating
 
 - title: Core Properties
@@ -17,41 +13,55 @@
   - /keyword/id
   - /keyword/$schema
 
-- title: Validation Properties
+- title: Instance Validation
   docs:
-  - /keyword/multipleOf
-  - /keyword/maximum
-  - /keyword/minimum
-  - /keyword/maxLength
-  - /keyword/minLength
-  - /keyword/pattern
-  - /keyword/additionalItems
-  - /keyword/items
-  - /keyword/maxItems
-  - /keyword/minItems
-  - /keyword/uniqueItems
-  - /keyword/maxProperties
-  - /keyword/minProperties
-  - /keyword/required
-  - /keyword/additionalProperties
-  - /keyword/properties
-  - /keyword/patternProperties
+  - /keyword/type
   - /keyword/dependencies
   - /keyword/enum
-  - /keyword/type
   - /keyword/allOf
   - /keyword/anyOf
   - /keyword/oneOf
   - /keyword/not
 
-- title: Annotation Properties
+- title: Object Validation
   docs:
-  - /keyword/id
+  - /keyword/properties
+  - /keyword/patternProperties
+  - /keyword/additionalProperties
+  - /keyword/required
+  - /keyword/minProperties
+  - /keyword/maxProperties
+
+- title: Array Validation
+  docs:
+  - /keyword/items
+  - /keyword/additionalItems
+  - /keyword/minItems
+  - /keyword/maxItems
+  - /keyword/uniqueItems
+
+- title: Number Validation
+  docs:
+  - /keyword/multipleOf
+  - /keyword/minimum
+  - /keyword/maximum
+
+- title: String Validation
+  docs:
+  - /keyword/minLength
+  - /keyword/maxLength
+  - /keyword/pattern
+
+- title: Utility
+  docs:
   - /keyword/title
   - /keyword/description
   - /keyword/default
   - /keyword/definitions
 
-- title: Hypermedia Properties
+- title: Hypermedia
   docs:
-  - /keyword/link
+  - /keyword/links
+  - /keyword/media
+  - /keyword/readOnly
+  - /keyword/pathStart
